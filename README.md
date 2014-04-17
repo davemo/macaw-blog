@@ -1,6 +1,6 @@
-# lineman-blog
+# macaw-blog
 
-Turns out that [lineman](http://linemanjs.com) makes a great blogging engine!
+[Macaw](http://www.macaw.co) makes a pretty good design prototyping tool and [Lineman](http://linemanjs.com) makes a great blogging engine!
 
 Here's [a screencast](https://www.youtube.com/watch?v=raznFJedCZM) to demo usage for Test Double's blog, [Double Takes](http://blog.testdouble.com).
 
