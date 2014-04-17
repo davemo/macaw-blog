@@ -1,8 +1,12 @@
-<h1>archives</h1>
-<ul>
-<% _(site.posts).chain().reverse().each(function(post){ %>
-  <li>
-    <a href="/<%= post.htmlPath() %>"><%= post.title() %></a>
-  </li>
-<% }) %>
-</ul>
+<article class="post clearfix">
+  <div class="title clearfix">
+    <% _(site.posts).chain().reverse().each(function(post){ %>
+      <li>
+        <a href="/<%= post.htmlPath() %>"><%= post.title() %></a>, <%= post.date() %>
+      </li>
+    <% }) %>
+  </div>
+  <footer>
+    Copyright <%= site.author %>, <%= new Date().getFullYear() %>.
+  </footer>
+</article>
