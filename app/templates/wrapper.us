@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
+    <link rel="alternate" type="application/rss+xml" title="<%= site.title %> - feed" href="/index.xml" />
+    <title><%= site.title %><%= post ? ' - '+post.title() : '' %></title>
+  </head>
+  <body class="body clearfix">
+    <header class="clearfix">
+      <h1><%= site.title %></h1>
+      <nav>
+        <a href="/" class="nav-link current">home</a>
+        <a href="/archive.html" class="nav-link">archives</a>
+      </nav>
+    </header>
+
+    <%= yield %>
+
+    <script type="text/javascript" src="<%= js %>"></script>
+  </body>
+</html>
+
